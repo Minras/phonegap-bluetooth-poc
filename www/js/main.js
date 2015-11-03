@@ -47,7 +47,7 @@ var app = {
     initialize: function() {
         var self = this;
         this.registerEvents();
-        this.menu_tpl = Handlebars.compile($("#tpl-main-menu").html());
+        this.menu_tpl = $("#tpl-main-menu").html();
         this.store = new MemoryStore(function() {
             self.route();
         });
