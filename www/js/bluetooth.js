@@ -1,5 +1,3 @@
-var bluetoothle; // plugin
-
 var bluetooth_config = {
 
 };
