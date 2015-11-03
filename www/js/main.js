@@ -43,10 +43,8 @@ var app = {
             return;
         }
         if (hash.match(routes['bt_list'])) {
-            this.showAlert('found' + hash, 'route');
             $(root).html(new ListView().render().el);
         } else {
-            this.showAlert('nothing found :(', 'route');
             $(root).html(new HomeView().render().el);
         }
     },
