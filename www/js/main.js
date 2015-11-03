@@ -61,7 +61,7 @@ var app = {
         this.route();
 
         // bluetooth related stuff
-        bluetooth.initialize(this.showAlert);
+        bt.initialize(this.showAlert);
     }
 
 };

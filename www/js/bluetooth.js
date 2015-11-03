@@ -1,8 +1,8 @@
-var bluetooth_config = {
+var bt_config = {
 
 };
 
-var bluetooth = {
+var bt = {
     logger: function(msg) {
         //
     },
