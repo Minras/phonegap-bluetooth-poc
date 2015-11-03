@@ -53,6 +53,7 @@ var app = {
         //this.store = new MemoryStore(function() {
         //    self.route();
         //});
+        this.route();
     }
 
 };
