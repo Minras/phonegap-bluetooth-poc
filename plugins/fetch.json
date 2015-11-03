@@ -1,0 +1,11 @@
+{
+    "cordova-plugin-bluetoothle": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/randdusing/BluetoothLE",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

@@ -20,6 +20,9 @@ var app = {
     },
 
     showAlert: function (message, title) {
+        if (undefined === title) {
+            title = '';
+        }
         if (navigator.notification) {
             navigator.notification.alert(
                 message,
@@ -28,7 +31,8 @@ var app = {
                 'OK' // Button label
             );
         } else {
-            alert(title + ": " + message);
+            var prefix = '' === title ? '' : title + ': ';
+            alert(prefix + message);
         }
     },
 
@@ -55,6 +59,9 @@ var app = {
         //    self.route();
         //});
         this.route();
+
+        // bluetooth related stuff
+        bluetooth.initialize(this.showAlert);
     }
 
 };
