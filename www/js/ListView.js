@@ -1,4 +1,4 @@
-var ListView = function(store) {
+var ListView = function() {
 
     this.initialize = function() {
         // Define a div wrapper for the view. The div wrapper is used to attach events.

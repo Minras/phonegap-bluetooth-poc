@@ -1,4 +1,4 @@
-var HomeView = function(store) {
+var HomeView = function() {
 
     this.initialize = function() {
         // Define a div wrapper for the view. The div wrapper is used to attach events.

@@ -36,11 +36,13 @@ var app = {
         var hash = window.location.hash;
         this.showAlert(hash, 'route');
         if (!hash) {
-            $(root).html(new HomeView(this.store).render().el);
+            $(root).html(new HomeView().render().el);
             return;
         }
         if (hash.match(routes['bt_list'])) {
-            $(root).html(new ListView(employee).render().el);
+            $(root).html(new ListView().render().el);
+        } else {
+            $(root).html(new HomeView().render().el);
         }
     },
 
@@ -48,9 +50,9 @@ var app = {
         var self = this;
         this.registerEvents();
         this.menu_tpl = $("#tpl-main-menu").html();
-        this.store = new MemoryStore(function() {
-            self.route();
-        });
+        //this.store = new MemoryStore(function() {
+        //    self.route();
+        //});
     }
 
 };
