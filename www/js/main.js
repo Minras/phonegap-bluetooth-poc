@@ -1,6 +1,6 @@
 var root = $('body');
 var routes = {
-    'bt_list': /^#list\//
+    'bt_list': /^#list/
 };
 
 var app = {
