@@ -6,7 +6,7 @@ var HomeView = function(store) {
     };
 
     this.render = function() {
-        this.el.html(HomeView.template());
+        this.el.html(app.menu_tpl + HomeView.template());
         return this;
     };
 

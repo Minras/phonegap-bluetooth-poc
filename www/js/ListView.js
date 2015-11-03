@@ -6,7 +6,7 @@ var ListView = function(store) {
     };
 
     this.render = function() {
-        this.el.html(ListView.template());
+        this.el.html(app.menu_tpl + ListView.template());
         return this;
     };
 
