@@ -6,4 +6,7 @@
     <content src="www/index.html" />
     <access origin="*" />
     <icon src="www/icon.png" />
+
+    <!-- Here be plugins -->
+    <gap:plugin name="com.jkhax0r.bluetoothle" />
 </widget>
