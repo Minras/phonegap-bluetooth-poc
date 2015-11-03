@@ -8,7 +8,7 @@ var app = {
         $(window).on('hashchange', $.proxy(this.route, this));
 
         // main menu routing
-        //$(root).on('click', '#menu-bt-list', this.addLocation);
+        $(root).on('click', '#menu-bt-list', this.route);
 
         // some css management
         $(root).on('mousedown', 'a', function(event) {
@@ -34,14 +34,15 @@ var app = {
 
     route: function() {
         var hash = window.location.hash;
-        this.showAlert(hash, 'route');
         if (!hash) {
             $(root).html(new HomeView().render().el);
             return;
         }
         if (hash.match(routes['bt_list'])) {
+            this.showAlert('found' + hash, 'route');
             $(root).html(new ListView().render().el);
         } else {
+            this.showAlert('nothing found :(', 'route');
             $(root).html(new HomeView().render().el);
         }
     },
