@@ -1,3 +1,5 @@
+var bluetoothle;
+
 var bt_config = {
 
 };
