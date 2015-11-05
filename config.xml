@@ -1,11 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.minras.phonegap_bluetooth_poc" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.minras.phonegap_bluetooth_poc"
+        version="1.0.0"
+        xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0">
     <name>PhoneGap Bluetooth PoC</name>
     <description>PhoneGap Bluetooth PoC</description>
     <author email="mail@minras.com" href="http://minras.com">Andrii "Minras" Shchurkov</author>
     <content src="www/index.html" />
     <access origin="*" />
     <icon src="www/icon.png" />
+
+    <preference name="android-minSdkVersion" value="21" />
+
+    <gap:platform name="ios" />
+    <gap:platform name="android" />
 
     <!-- Here be plugins -->
     <gap:plugin name="cordova-plugin-bluetoothle" source="npm" />
