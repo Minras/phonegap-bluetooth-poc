@@ -14,6 +14,10 @@ var bt = {
 
         var paramsObj = {request:true};
         if (undefined === bluetoothle) {
+            if (undefined !== window.bluetoothle) {
+                bluetoothle = window.bluetoothle;
+                this.logger("BT plugin recovered!");
+            }
             this.logger("BT plugin no found");
             return false;
         }

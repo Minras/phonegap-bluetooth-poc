@@ -12,9 +12,6 @@
 
     <preference name="android-minSdkVersion" value="21" />
 
-    <gap:platform name="ios" />
-    <gap:platform name="android" />
-
     <!-- Here be plugins -->
     <gap:plugin name="cordova-plugin-bluetoothle" source="npm" />
     <!-- gap:plugin name="com.jkhax0r.bluetoothle" / -->
