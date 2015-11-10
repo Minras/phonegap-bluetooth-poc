@@ -3,6 +3,10 @@ var bluetoothle;
 var messages = "";
 
 $( document ).ready(function() {
+  document.addEventListener("deviceready", onDeviceReady, false);
+  function onDeviceReady() {
+      console.log("console.log works well");
+  }
   if (document.URL.match(/^https?:/) || document.URL.match(/^file:/)) {
     init();
   } else {
