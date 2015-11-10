@@ -5,7 +5,7 @@ var bt_config = {
 var bt = {
 
     initialize: function(logger) {
-        //this.initializeLogger(logger);
+        this.initializeLogger(logger);
 
         var paramsObj = {request:true};
         if (undefined === bluetoothle) {
