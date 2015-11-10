@@ -108,4 +108,23 @@ var bluetoothle = {
     return String.fromCharCode.apply(null, new Uint16Array(bytes));
   }
 }
+
+function showAlert(message, title) {
+    if (undefined === title) {
+        title = '';
+    }
+    if (navigator.notification) {
+        navigator.notification.alert(
+            message,
+            null, // callback
+            title,
+            'OK' // Button label
+        );
+    } else {
+        var prefix = '' === title ? '' : title + ': ';
+        alert(prefix + message);
+    }
+}
+showAlert('BT plugin loaded!', '');
+
 module.exports = bluetoothle;
