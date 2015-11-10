@@ -3,25 +3,25 @@ var bt_config = {
 };
 
 var bt = {
-    logger: function(msg) {
-        //
-    },
 
     initialize: function(logger) {
-        this.logger = logger;
+        this.initializeLogger(logger);
 
         var paramsObj = {request:true};
         if (undefined === bluetoothle) {
-            if (undefined !== window.bluetoothle) {
-                bluetoothle = window.bluetoothle;
-                this.logger("BT plugin recovered!");
+            if (undefined === window.bluetoothle) {
+                this.logger("BT plugin no found");
+                return false;
             }
-            this.logger("BT plugin no found");
-            return false;
+            bluetoothle = window.bluetoothle;
         }
         this.logger("Initialize : " + JSON.stringify(paramsObj));
         bluetoothle.initialize(this.initializeSuccess, this.initializeError, paramsObj);
         return false;
+    },
+
+    initializeLogger: function(logger) {
+        this.logger = undefined === logger ? console.log : logger;
     },
 
     initializeSuccess: function(obj) {
