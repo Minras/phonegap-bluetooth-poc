@@ -6,7 +6,7 @@
     <name>PhoneGap Bluetooth PoC</name>
     <description>PhoneGap Bluetooth PoC</description>
     <author email="mail@minras.com" href="http://minras.com">Andrii "Minras" Shchurkov</author>
-    <content src="index.html" />
+    <content src="example/www/example.html" />
     <access origin="*" />
     <icon src="www/icon.png" />
 
