@@ -14,5 +14,6 @@
 
     <!-- Here be plugins -->
     <gap:plugin name="cordova-plugin-bluetoothle" source="npm" />
+    <gap:plugin name="cordova-plugin-console" />
     <!-- gap:plugin name="com.jkhax0r.bluetoothle" / -->
 </widget>
