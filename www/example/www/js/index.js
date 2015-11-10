@@ -6,6 +6,7 @@ $( document ).ready(function() {
   if (document.URL.match(/^https?:/) || document.URL.match(/^file:/)) {
     init();
   } else {
+    logger('document.URL: ' + document.URL);
     document.addEventListener("deviceready", init, false);
   }
 });
