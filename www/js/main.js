@@ -65,10 +65,5 @@ var app = {
 };
 
 $(document).ready(function() {
-    app.showAlert('app init');
     app.initialize();
-    document.addEventListener("deviceready", onDeviceReady, false);
-    function onDeviceReady() {
-        console.log("console.log works well");
-    }
 });
